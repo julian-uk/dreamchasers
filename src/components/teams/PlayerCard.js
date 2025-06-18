@@ -1,11 +1,14 @@
 import React from 'react';
+import './PlayerCard.css';
 
 function PlayerCard({ player }) {
   return (
-    <div style={{ border: '1px solid #ccc', padding: '1rem', width: 200 }}>
-      <h3>{player.name}</h3>
-      <p>Position: {player.position}</p>
-      <p>Number: {player.number}</p>
+    <div className="player-card horizontal">
+      <img src={player.photo} alt={player.name} className="player-photo" />
+      <div className="player-info">
+        <h4>#{player.number} {player.name}</h4>
+        <p>{player.position}</p>
+      </div>
     </div>
   );
 }

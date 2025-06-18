@@ -1,0 +1,30 @@
+.player-card.horizontal {
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .player-card.horizontal .player-photo {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 1rem;
+  }
+  
+  .player-info h4 {
+    margin: 0.3rem 0;
+    color: white;
+  }
+  
+  .player-info p {
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+  

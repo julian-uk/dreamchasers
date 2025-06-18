@@ -46,3 +46,15 @@
     text-align: center;
   }
   
+.gallery-thumb {
+  border: 2px solid #333;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  transition: border-width 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-thumb:hover {
+  border: 3px solid #fff;
+  transform: scale(1.03);
+}

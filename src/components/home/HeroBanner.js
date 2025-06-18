@@ -4,7 +4,7 @@ function HeroBanner() {
   return (
     <div
       className="hero"
-      style={{ backgroundImage: 'url("/assets/hero.jpg")' }}
+      style={{ backgroundImage: 'url("/assets/hero.png")' }}
     >
       <div>
         <h1>Dream Chaser Basketball</h1>

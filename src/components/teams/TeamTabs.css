@@ -1,0 +1,25 @@
+.team-tabs {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .team-tabs button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+  }
+  
+  .team-tabs button:hover {
+    background: #555;
+  }
+  
+  .team-tabs button.active {
+    background: #007acc;
+  }
+  
