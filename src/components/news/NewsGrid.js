@@ -1,17 +1,20 @@
 import React from 'react';
-import { news } from '../../data/news';
+import { Link } from 'react-router-dom';
+import { newsItems } from '../../data/news';
 import './NewsGrid.css';
 
 function NewsGrid() {
   return (
-    <div className="grid news-grid">
-      {news.map(item => (
-        <div key={item.id} className="news-card">
-            <img src={item.image} alt={item.title} />
-            <div className="overlay">
-              <p>{item.title}</p>
-            </div>
-        </div>
+    <div className="news-grid grid">
+      {newsItems.map(news => (
+        <Link
+          to={`/news/${news.id}`}
+          key={news.id}
+          className="news-card"
+        >
+          <img src={news.thumbnail} alt={news.title} />
+          <div className="overlay">{news.title}</div>
+        </Link>
       ))}
     </div>
   );
