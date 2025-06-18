@@ -1,0 +1,41 @@
+.fixtures-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .fixtures-row {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem 0;
+    scrollbar-width: none;
+  }
+  
+  .fixtures-row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .fixture-card {
+    flex: 0 0 auto;
+    width: 200px;
+    background: #1e1e1e;
+    color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .scroll-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
